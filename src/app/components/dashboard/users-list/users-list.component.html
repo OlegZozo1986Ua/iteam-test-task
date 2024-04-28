@@ -1,0 +1,9 @@
+<ng-container *ngFor=" let user of usersList">
+  <div class="user-wrapper">
+    <div>Name: {{ user.name }} {{ user['lastName'] }}</div>
+    <div>Date of birth: {{ user['dateOfBirth'] | date: 'dd/MM/yyyy' }}</div>
+    <div>Education: {{ user['education'] }}</div>
+    <div>Role: {{ user['role'] }}</div>
+  </div>
+  <hr>
+</ng-container>

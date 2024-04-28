@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <h4 class="modal-title">User`s graph</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <div>Agreeablenes {{ graph.data?.agreeableness || '' }}</div>
+  <div>Luck {{ graph.data?.luck || '' }}</div>
+  <div>Openness {{ graph.data?.openness || '' }}</div>
+  <div>Drive {{ graph.data?.drive || '' }}</div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>
