@@ -1,8 +1,8 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AssessmentComponent } from '../modals/assessment/assessment.component';
-import { ApiUsersService } from '../../../services/apiUsers.service';
 import { IAssessment } from '../interfaces';
+import { ApiUsersService } from '../../../services/apiUsers.service';
 
 @Component({
   selector: 'app-user-assessmants',

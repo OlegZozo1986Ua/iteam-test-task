@@ -1,19 +1,14 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { IGraph } from '../../interfaces';
 
 @Component({
   selector: 'app-assessment',
   standalone: true,
-  templateUrl: './assessment.component.html',
-  styleUrl: './assessment.component.scss'
+  templateUrl: './assessment.component.html'
 })
-export class AssessmentComponent implements  OnChanges{
+export class AssessmentComponent {
   @Input() graph: Partial<IGraph> = {};
 
   constructor(public activeModal: NgbActiveModal) {}
-
-  ngOnChanges() {
-    console.log(this.graph);
-  }
 }

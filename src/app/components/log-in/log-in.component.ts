@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { ApiUsersService } from '../../../services/apiUsers.service';
+import { ApiUsersService } from '../../services/apiUsers.service';
 
 @Component({
   selector: 'app-log-in',

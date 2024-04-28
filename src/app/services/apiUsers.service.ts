@@ -24,23 +24,23 @@ export class ApiUsersService {
       .pipe(first())
       .subscribe((res: IApiResponse) => {
           this.apiResponse = res;
-          this.router.navigate(['dashboard/userassessments'])
+          this.router.navigate(['dashboard', 'userassessments']);
         });
   }
 
   public getUserAssessments(): Observable<IAssessment[]> {
     return this.http.get<IAssessment[]>('https://user-assessment-api.vercel.app/api/userassessments')
-      .pipe(first())
+      .pipe(first());
   }
 
   public getUsersList(): Observable<IUser[]> {
     return this.http.get<IUser[]>('https://user-assessment-api.vercel.app/api/users')
-      .pipe(first())
+      .pipe(first());
   }
 
   public getUserGraph(id: number) {
     return this.http.get(`https://user-assessment-api.vercel.app/api/userassessments/graph?id=${id}`)
-      .pipe(first())
+      .pipe(first());
   }
 
   public logOut() {
